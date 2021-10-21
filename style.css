@@ -23,7 +23,6 @@ h1 {
   margin: 0;
   color: #7D73FC;
   text-align: center;
- 
   }
 
 h2 {
@@ -94,6 +93,7 @@ li {
 .flex-box {
   display: flex;
   flex-direction: column;
+  border: 1px solid green;
   margin: 12px 0px;
 }
 .flex-list-container {
@@ -119,6 +119,7 @@ li {
   display: flex;
   width: 200px;
   justify-content: center;
+  border: 1px solid orangered;
 }
 .footer-icons li{
   display: flex;
