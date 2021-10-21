@@ -6,13 +6,17 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-nav {
-  position: absolute;
+main {
+  background: url(images/top-bg.svg);
+  background-repeat: no-repeat;
 }
 
 header {
-  justify-content: center;
-  border: 1px solid cyan;
+  align-items: center;
+}
+
+section {
+  align-items: center;
 }
 
 h1 {
@@ -39,8 +43,9 @@ p {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.37px;
-  margin: 0;
+  margin-top: 50px;
   text-align: center;
+  align-self: center;
   color: #c8c8d4;
 }
 
@@ -54,11 +59,11 @@ li {
   padding: 10px;
 }
 
-/* Nav CSS Start */
+/* Nav Start */
 .flex-nav ul {
   display: flex;
   margin: 0;
-  border: 1px solid red;
+  align-items: center;
 }
 
 .flex-items {
@@ -69,33 +74,36 @@ li {
   text-align: center;
 }
 
-.nav-name {
+#nav-name {
   flex: 1;
-  align-self: flex-start;
-  border: 1px solid red;
 }
 
-#nav-icon {
+.icon {
   width: 50%;
-  align-self: flex-end;
-  border: 1px solid red;
 }
 
-/* Nav CSS End */
+/* Nav End */
 
-/* Header CSS Start */
-.flex-container {
+/* Section Headline Start*/
+.headline {
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
-  width: 327px;
-}
-
-.flex-box {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid green;
   margin: 12px 0;
+}
+
+#flex-box-p {
+  width: 327px;
+  height: 170px;
+}
+
+/* Section Headline End */
+
+/* Section About Start */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 327px;
 }
 
 .flex-list-container {
@@ -116,22 +124,29 @@ li {
   color: #9490ff;
 }
 
-#flex-box-p {
-  width: 327px;
-  height: 170px;
+/* Section About */
+
+/* Section Social */
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social div {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-icons {
   display: flex;
-  width: 200px;
   justify-content: center;
-  border: 1px solid orangered;
 }
 
 .footer-icons li {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
+  padding: 5%;
 }
 
 .icons {
