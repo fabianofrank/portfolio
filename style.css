@@ -7,42 +7,42 @@ body {
 }
 
 nav {
-  position: ;
+  position: absolute;
 }
 
 header {
   justify-content: center;
   border: 1px solid cyan;
-  
 }
+
 h1 {
   font-weight: 700;
   font-size: 28px;
   line-height: 72px;
   letter-spacing: 0.37px;
   margin: 0;
-  color: #7D73FC;
+  color: #7d73fc;
   text-align: center;
-  }
+}
 
 h2 {
   font-weight: 700;
   font-size: 22px;
   line-height: 44px;
-  letter-spacing: 0.37px;
+  letter-spacing: 0.code37px;
   margin: 0;
   text-align: center;
-  }
+}
 
 p {
   font-weight: 300;
   font-size: 16;
   line-height: 24px;
   letter-spacing: 0.37px;
-  margin: 0px;
+  margin: 0;
   text-align: center;
-  color: #C8C8D4;
-  }
+  color: #c8c8d4;
+}
 
 a {
   color: white;
@@ -54,34 +54,33 @@ li {
   padding: 10px;
 }
 
-
-
 /* Nav CSS Start */
-.flex-nav ul{
+.flex-nav ul {
   display: flex;
   margin: 0;
   border: 1px solid red;
 }
+
 .flex-items {
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;
-  margin: 0px 5px;
+  margin: 0 5px;
   text-align: center;
 }
+
 .nav-name {
   flex: 1;
   align-self: flex-start;
   border: 1px solid red;
 }
+
 #nav-icon {
   width: 50%;
   align-self: flex-end;
   border: 1px solid red; 
 }
 /* Nav CSS End */
-
-
 
 /* Header CSS Start */
 .flex-container {
@@ -90,42 +89,50 @@ li {
   border: 1px solid green;
   width: 327px;
 }
+
 .flex-box {
   display: flex;
   flex-direction: column;
   border: 1px solid green;
   margin: 12px 0px;
 }
+
 .flex-list-container {
   display: flex;
   flex-wrap: wrap;
 }
+
 .flex-list-font ul {
   font-weight: 300;
   line-height: 12px;
   margin: 0;
 }
+
 .flex-list-title {
   font-weight: 500;
   line-height: 24px;
   margin-bottom: 5.33px;
   color: #9490ff;
 }
+
 #flex-box-p {
   width: 327px;
   height: 170px;
 }
+
 .footer-icons {
   display: flex;
   width: 200px;
   justify-content: center;
   border: 1px solid orangered;
 }
+
 .footer-icons li{
   display: flex;
   width: 40px;
   height: 40px;
 }
+
 .icons {
   width: 24px;
 }
