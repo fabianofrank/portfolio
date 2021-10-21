@@ -7,8 +7,9 @@ body {
 }
 
 main {
-  background: url(images/top-bg.svg);
+  background-image: url(images/top-bg.svg);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 header {
