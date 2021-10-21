@@ -9,7 +9,6 @@ body {
 main {
   background-image: url(images/top-bg.svg);
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 header {
