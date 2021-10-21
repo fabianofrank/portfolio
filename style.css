@@ -7,7 +7,7 @@ body {
 }
 
 main {
-  background-image: url(images/top-bg.svg);
+  background: url(images/top-bg.png);
   background-repeat: no-repeat;
 }
 
@@ -35,6 +35,7 @@ h2 {
   line-height: 44px;
   letter-spacing: 0.37px;
   margin: 0;
+  color: white;
   text-align: center;
 }
 
