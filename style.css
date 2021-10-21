@@ -29,7 +29,7 @@ h2 {
   font-weight: 700;
   font-size: 22px;
   line-height: 44px;
-  letter-spacing: 0.code37px;
+  letter-spacing: 0.37px;
   margin: 0;
   text-align: center;
 }
@@ -78,8 +78,9 @@ li {
 #nav-icon {
   width: 50%;
   align-self: flex-end;
-  border: 1px solid red; 
+  border: 1px solid red;
 }
+
 /* Nav CSS End */
 
 /* Header CSS Start */
@@ -94,7 +95,7 @@ li {
   display: flex;
   flex-direction: column;
   border: 1px solid green;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 .flex-list-container {
@@ -127,7 +128,7 @@ li {
   border: 1px solid orangered;
 }
 
-.footer-icons li{
+.footer-icons li {
   display: flex;
   width: 40px;
   height: 40px;
