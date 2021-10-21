@@ -9,6 +9,7 @@ body {
 main {
   background: url(images/top-bg.png);
   background-repeat: no-repeat;
+  align-items: center;
 }
 
 header {
@@ -101,9 +102,9 @@ li {
 
 /* Section About Start */
 .about {
+  margin-left: 6%;
   display: flex;
   flex-direction: column;
-  align-self: center;
   width: 327px;
 }
 
@@ -125,33 +126,91 @@ li {
   color: #9490ff;
 }
 
-/* Section About */
+/* Section About End */
 
-/* Section Social */
+/* Section Social Start */
 .social {
+  margin-right: 6%;
   display: flex;
   flex-direction: column;
 }
 
 .social div {
   display: flex;
-  flex-direction: row;
 }
 
 .footer-icons {
   display: flex;
-  justify-content: center;
-}
-
-.footer-icons li {
-  display: flex;
-  width: 20px;
-  height: 20px;
-  padding: 5%;
 }
 
 .icons {
   width: 24px;
 }
 
-/* Header CSS End */
+/* Section Social End */
+
+/* Section Middle Start */
+.workbg {
+  background: url(images/middle-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work {
+  display: grid;
+  grid-template-rows: repeat(7, 20%);
+  padding-left: 6%;
+}
+
+.work h1 {
+  grid-column: 1 ;
+  padding: 10% 0 10% 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.37px;
+  margin: 0;
+  color: #9490ff;
+  text-align: left;
+}
+
+.work img {
+  grid-column: 1 ;
+  padding: 10% 0 10% 0;
+}
+
+.work h2 {
+  grid-column: 1;
+  padding: 10% 0 10% 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.37px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.work p {
+  grid-column: 1;
+  margin-right: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #dcdce8;
+}
+
+.workul {
+  border: 1px solid red;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  padding: 0;
+}
+
+.workul li {
+  border: 1px solid red;
+  margin: auto;
+}
+/* Section Middle End */
