@@ -163,7 +163,7 @@ li {
 }
 
 .work h1 {
-  grid-column: 1 ;
+  grid-column: 1;
   padding: 10% 0 10% 0;
   font-weight: 500;
   font-size: 40px;
@@ -175,7 +175,7 @@ li {
 }
 
 .work img {
-  grid-column: 1 ;
+  grid-column: 1;
   padding: 10% 0 10% 0;
 }
 
@@ -186,7 +186,7 @@ li {
   font-size: 32px;
   line-height: 44px;
   letter-spacing: 0.37px;
-  color: #ffffff;
+  color: #fff;
   text-align: left;
 }
 
@@ -213,4 +213,5 @@ li {
   border: 1px solid red;
   margin: auto;
 }
+
 /* Section Middle End */
