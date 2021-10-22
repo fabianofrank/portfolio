@@ -1,59 +1,52 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio
 
-> One paragraph statement about the project.
+This is the second project submission Micronauts will send to code review. It is a Porfolio chosen among Figma's templates made available by Microverse.
 
-![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+This project consists in following the basic Github Flow by using Pull Requests to adress issues regarding issues that might came up.
+
+This Portfolio Project strengthens HTML semantics when related to the CSS Box Model and Flexbox.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- JS
+- HTML and CSS
+- GIT
 
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
+**https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository**
+
+### Templates
+
+- Figma: [Templates]https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A2346
+
 
 ### Prerequisites
+Git
+Figma Templates
+
 
 ### Setup
 
-### Install
+Linux: sudo apt-get install git
 
-### Usage
+Windows: https://git-for-windows.github.io
 
-### Run tests
-
-### Deployment
-
-
+Mac: https://sourceforge.net/projects/git-osx-installer/files/
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@fabianofrank](https://github.com/fabianofrank)
+- Twitter: [@fabianofrankk](https://twitter.com/fabianofrankk)
+- LinkedIn: [fabianofrank](https://linkedin.com/in/fabianofrank)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -65,12 +58,7 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is not licensed.

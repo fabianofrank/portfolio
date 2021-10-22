@@ -6,25 +6,29 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-nav {
-  position: ;
+main {
+  background: url(images/top-bg.png);
+  background-repeat: no-repeat;
+  align-items: center;
 }
 
 header {
-  justify-content: center;
-  border: 1px solid cyan;
-  
+  align-items: center;
 }
+
+section {
+  align-items: center;
+}
+
 h1 {
   font-weight: 700;
   font-size: 28px;
   line-height: 72px;
   letter-spacing: 0.37px;
   margin: 0;
-  color: #7D73FC;
+  color: #7d73fc;
   text-align: center;
- 
-  }
+}
 
 h2 {
   font-weight: 700;
@@ -32,18 +36,20 @@ h2 {
   line-height: 44px;
   letter-spacing: 0.37px;
   margin: 0;
+  color: white;
   text-align: center;
-  }
+}
 
 p {
   font-weight: 300;
-  font-size: 16;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.37px;
-  margin: 0px;
+  margin-top: 50px;
   text-align: center;
-  color: #C8C8D4;
-  }
+  align-self: center;
+  color: #c8c8d4;
+}
 
 a {
   color: white;
@@ -55,78 +61,90 @@ li {
   padding: 10px;
 }
 
-
-
-/* Nav CSS Start */
-.flex-nav ul{
+/* Nav Start */
+.flex-nav ul {
   display: flex;
   margin: 0;
-  border: 1px solid red;
+  align-items: center;
 }
+
 .flex-items {
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;
-  margin: 0px 5px;
+  margin: 0 5px;
   text-align: center;
 }
-.nav-name {
+
+#nav-name {
   flex: 1;
-  align-self: flex-start;
-  border: 1px solid red;
 }
-#nav-icon {
+
+.icon {
   width: 50%;
-  align-self: flex-end;
-  border: 1px solid red; 
 }
-/* Nav CSS End */
 
+/* Nav End */
 
-
-/* Header CSS Start */
-.flex-container {
+/* Section Headline Start */
+.headline {
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
+  margin: 12px 0;
+}
+
+#flex-box-p {
+  width: 327px;
+  height: 170px;
+}
+
+/* Section Headline End */
+
+/* Section About Start */
+.about {
+  margin-left: 6%;
+  display: flex;
+  flex-direction: column;
   width: 327px;
 }
-.flex-box {
-  display: flex;
-  flex-direction: column;
-  margin: 12px 0px;
-}
+
 .flex-list-container {
   display: flex;
   flex-wrap: wrap;
 }
+
 .flex-list-font ul {
   font-weight: 300;
   line-height: 12px;
   margin: 0;
 }
+
 .flex-list-title {
   font-weight: 500;
   line-height: 24px;
   margin-bottom: 5.33px;
   color: #9490ff;
 }
-#flex-box-p {
-  width: 327px;
-  height: 170px;
+
+/* Section About End */
+
+/* Section Social Start */
+.social {
+  margin-right: 6%;
+  display: flex;
+  flex-direction: column;
 }
+
+.social div {
+  display: flex;
+}
+
 .footer-icons {
   display: flex;
-  width: 200px;
-  justify-content: center;
 }
-.footer-icons li{
-  display: flex;
-  width: 40px;
-  height: 40px;
-}
+
 .icons {
   width: 24px;
 }
 
-/* Header CSS End */
+/* Section Social End */
