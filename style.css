@@ -37,7 +37,6 @@ h2 {
   letter-spacing: 0.37px;
   margin: 0;
   color: white;
-  text-align: center;
 }
 
 p {
@@ -148,3 +147,91 @@ li {
 }
 
 /* Section Social End */
+
+/* Section Middle Start */
+.workbg {
+  background: url(images/middle-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work {
+  display: flex; /* Flexbox */
+  flex-direction: column;
+  width: 375px;
+}
+
+.work h1 {
+  padding: 10% 0 10% 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.37px;
+  color: #9490ff;
+  text-align: left;
+  width: 327px;
+}
+
+.work h2 {
+  padding: 6% 0 6% 0;
+  margin: 0 0 0 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.37px;
+  color: #fff;
+  width: 327px;
+}
+
+.work img {
+  padding: 6% 0 6% 0;
+}
+
+.work p {
+  padding: 6% 0 6% 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #dcdce8;
+  width: 327px;
+}
+
+.workul {
+  display: grid; /* Nested Grid */
+  grid-template-columns: repeat(7, auto);
+  padding: 0;
+}
+
+.workul li {
+  margin: auto;
+}
+
+.work button {
+  background-color: #7d73fc;
+  border: none;
+  color: white;
+  padding: 12px;
+  margin-left: 24px;
+  align-self: flex-start;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.work button:hover {
+  background: #7d73ec;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.work button:active {
+  background: #5e42d7;
+}
+
+.work button:disabled {
+  background: #2a2b33;
+}
+
+/* Section Middle End */
