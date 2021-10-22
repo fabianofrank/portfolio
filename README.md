@@ -2,12 +2,14 @@
 
 # Portfolio
 
-This is the second project submission Micronauts will send to code review. It is a Porfolio chosen among Figma's templates made available by Microverse.
-
-
 This project consists in following the basic Github Flow by using Pull Requests to adress issues regarding issues that might came up.
 
-This Portfolio Project strengthens HTML semantics when related to the CSS Box Model and Flexbox.
+This Portfolio Project strengthens HTML and CSS skills by demanding a proper use of HTML semantics and their relational use of Box Models, Flexboxes and Grid.
+
+Disclaimer: This is the second project submission Micronauts will send to code review at Microverse. This is a Porfolio made inspired by the Figma's templates made available by Microverse.
+
+
+
 
 ## Built With
 
@@ -18,12 +20,12 @@ This Portfolio Project strengthens HTML semantics when related to the CSS Box Mo
 
 
 ## Getting Started
-To get a local copy up and running follow these simple example steps.
-**https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository**
+To get a local copy up and running follow these simple example [steps](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
 
 ### Templates
 
-- Figma: [Templates]https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A2346
+- Figma: [Templates](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A2346)
 
 
 ### Prerequisites
@@ -35,9 +37,9 @@ Figma Templates
 
 Linux: sudo apt-get install git
 
-Windows: https://git-for-windows.github.io
+Windows: [Instructions](https://git-for-windows.github.io)
 
-Mac: https://sourceforge.net/projects/git-osx-installer/files/
+Mac: [Instruction](https://sourceforge.net/projects/git-osx-installer/files/)
 
 ## Authors
 
