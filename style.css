@@ -200,13 +200,13 @@ li {
 }
 
 .workul {
-  display: grid; /* Nested Grid */
-  grid-template-columns: repeat(7, auto);
+  display: inline-block;
   padding: 0;
 }
 
 .workul li {
   margin: auto;
+  float: right;
 }
 
 .work button {
