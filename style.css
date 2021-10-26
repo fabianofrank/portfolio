@@ -213,7 +213,7 @@ li {
   margin: auto;
 }
 
-.work button {
+#work-button {
   background-color: #7d73fc;
   border: none;
   color: white;
@@ -225,16 +225,16 @@ li {
   font-weight: 500;
 }
 
-.work button:hover {
+#work-button:hover {
   background: #7d73ec;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
-.work button:active {
+#work-button:active {
   background: #5e42d7;
 }
 
-.work button:disabled {
+#work-button:disabled {
   background: #2a2b33;
 }
 
@@ -312,7 +312,7 @@ form {
   padding: 12px;
 }
 
-.contact button {
+#contact-button {
   background-color: #7d73fc;
   border: none;
   color: white;
@@ -323,16 +323,16 @@ form {
   font-weight: 500;
 }
 
-.contact button:hover {
+#contact-button:hover {
   background: #7d73ec;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
-.contact button:active {
+#contact-button:active {
   background: #5e42d7;
 }
 
-.contact button:disabled {
+#contact-button:disabled {
   background: #2a2b33;
 }
 
