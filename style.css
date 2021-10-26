@@ -111,7 +111,6 @@ li {
   display: flex;
   flex-wrap: wrap;
   margin-top: 32px;
-
 }
 
 .flex-list-font ul {
@@ -264,23 +263,23 @@ form {
 }
 
 .contact h1 {
-font-weight: 500;
-font-size: 32px;
-line-height: 44px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #9390ff;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #9390ff;
 }
 
 .contact p {
-margin: 24px 0 16px 0;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-color: #f5f5ff
+  margin: 24px 0 16px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
 }
 
 .contact ul {
@@ -310,7 +309,7 @@ color: #f5f5ff
 
 .contact textarea {
   height: 148px;
-  padding: 12px;  
+  padding: 12px;
 }
 
 .contact button {
@@ -341,7 +340,7 @@ color: #f5f5ff
 
 /* Section Footer Start */
 footer {
-  border-top: 1px solid #3A3837;
+  border-top: 1px solid #3a3837;
   margin-top: 71px;
 }
 
