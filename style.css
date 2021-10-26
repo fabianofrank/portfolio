@@ -4,11 +4,11 @@ body {
   position: relative;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url(images/top-bg.png);
+  background-repeat: no-repeat;
 }
 
 main {
-  background: url(images/top-bg.png);
-  background-repeat: no-repeat;
   align-items: center;
 }
 
@@ -110,12 +110,15 @@ li {
 .flex-list-container {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 32px;
+
 }
 
 .flex-list-font ul {
   font-weight: 300;
   line-height: 12px;
   margin: 0;
+  margin-bottom: 33px;
 }
 
 .flex-list-title {
@@ -123,15 +126,16 @@ li {
   line-height: 24px;
   margin-bottom: 5.33px;
   color: #9490ff;
+  padding-top: 0;
 }
 
 /* Section About End */
 
 /* Section Social Start */
 .social {
-  margin-right: 6%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .social div {
@@ -140,15 +144,17 @@ li {
 
 .footer-icons {
   display: flex;
+  padding: 0;
+  margin: 48px 0 28px;
 }
 
-.icons {
-  width: 24px;
+.footer-icons li {
+  padding: 0%;
 }
 
 /* Section Social End */
 
-/* Section Middle Start */
+/* Section Work Start */
 .workbg {
   background: url(images/middle-bg.png);
   background-repeat: no-repeat;
@@ -162,7 +168,7 @@ li {
 }
 
 .work h1 {
-  padding: 10% 0 10% 0;
+  padding: 84px 0 10% 0;
   font-weight: 500;
   font-size: 40px;
   line-height: 52px;
@@ -174,7 +180,7 @@ li {
 
 .work h2 {
   padding: 6% 0 6% 0;
-  margin: 0 0 0 0;
+  margin: 0;
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
@@ -189,14 +195,13 @@ li {
 
 .work p {
   padding: 6% 0 6% 0;
-  margin: 0;
+  margin: 0 24px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.5px;
   text-align: left;
   color: #dcdce8;
-  width: 327px;
 }
 
 .workul {
@@ -234,16 +239,9 @@ li {
   background: #2a2b33;
 }
 
-/* Section Middle End */
+/* Section Work End */
 
 /* Section Contact Start */
-.contact {
-  margin-top: 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -251,7 +249,41 @@ form {
   width: 100%;
 }
 
-.contact > form > ul {
+.contact {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.contact h1 {
+font-weight: 500;
+font-size: 32px;
+line-height: 44px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #9390ff;
+}
+
+.contact p {
+margin: 24px 0 16px 0;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #f5f5ff
+}
+
+.contact ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -286,7 +318,6 @@ form {
   border: none;
   color: white;
   padding: 12px;
-  margin-left: 24px;
   align-self: center;
   text-align: center;
   font-size: 12px;
