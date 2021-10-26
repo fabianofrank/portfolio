@@ -242,19 +242,44 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid green;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid green;
+  width: 100%;
 }
 
 .contact > form > ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   margin: 24px;
+  padding: 0;
+}
+
+.contact li {
+  display: flex;
   border: 1px solid red;
+  flex: 1;
+  width: 327px;
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+}
+
+.input {
+  flex: 1;
+  width: 100%;
+  border: 0;
+  padding: 15px 16px;
+}
+
+.contact textarea {
+  height: 148px;
+  padding: 12px;  
 }
