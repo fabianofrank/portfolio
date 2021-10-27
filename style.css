@@ -28,16 +28,6 @@ h2 {
   text-align: center;
 }
 
-p {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.37px;
-  text-align: center;
-  align-self: center;
-  color: #c8c8d4;
-}
-
 a {
   color: white;
   text-decoration: none;
@@ -48,6 +38,11 @@ li {
 }
 
 /* Nav Start */
+.flex-nav {
+  position: absolute;
+  width: 100%;
+}
+
 .flex-nav ul {
   display: flex;
   margin: 0;
@@ -56,7 +51,7 @@ li {
 }
 
 .nav-name {
-  flex: 1;
+  flex: content;
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
@@ -82,27 +77,36 @@ li {
   flex-direction: column;
 }
 
+.headline header {
+  margin: 139px 24px 40px 24px;
+}
+
 .headline h1 {
-  font-weight: 700; /* size 90, lineheight 105 */
+  font-weight: 700;
   font-size: 48px;
   line-height: 72px;
   letter-spacing: 0.37px;
-  margin: 12px 0; /* margin: 24px 0px */
+  margin: 12px 0;
 }
 
 .headline h2 {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
-  margin: 12px 0; /* margin: 24px 0px */
+  margin: 12px 0;
 }
 
 .headline p {
-  min-width: 327px;
-  min-height: 170px;
-  max-width: 447px;
-  max-height: 155px;
-  margin: 40px 24px 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.37px;
+  text-align: center;
+  color: #c8c8d4;
+  max-width: 327px;
+  max-height: 170px;
+  line-height: 28px;
+  margin: 0 24px 33px 24px;
 }
 
 /* Headline End */
@@ -113,17 +117,26 @@ li {
   flex-direction: column;
 }
 
-.about div {
+.vector-about {
+  border: 1px solid #646369;
+  width: 60vw;
+  min-width: 327px;
+}
+
+.about-div {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin: 32px 0 33px;
-  align-items: center;
 }
 
 .about ul {
-  align-self: center;
-  font-weight: 300;
-  line-height: 12px;
+  align-self: flex-start;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding-right: 32px;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -131,33 +144,32 @@ li {
   padding: 7px;
 }
 
-.flex-list-title {
+.list-title {
   font-weight: 500;
+  font-size: 12px;
   line-height: 24px;
   color: #9490ff;
-  padding-top: 0;
 }
 
 /* About End */
 
 /* Social Start */
+.display-none a {
+  display: none;
+}
+
 .social {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.social div {
-  display: flex;
-}
-
-.footer-icons {
+.social ul {
   display: flex;
   padding: 0;
   margin: 48px 0 28px;
 }
 
-.footer-icons li {
+.social li {
   padding: 0%;
 }
 
@@ -170,40 +182,25 @@ li {
   background-size: cover;
 }
 
-.work {
-  display: flex; /* Flexbox */
+.vector-work {
+  border: 1px solid #646369;
+  width: 80vw;
+}
+
+.posts {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  
 }
 
-.work h1 {
-  padding: 84px 0 10% 0;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 52px;
-  letter-spacing: 0.37px;
-  color: #9490ff;
-  text-align: left;
-  width: 327px;
-}
-
-.work h2 {
-  padding: 6% 0 6% 0;
+.posts p {
+  max-width: 327px;
+  max-height: 170px;
+  line-height: 28px;
+  margin: 0 24px 33px 24px;
+  padding: 24px 0 24px 0;
   margin: 0;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
-  letter-spacing: 0.37px;
-  color: #fff;
-  width: 327px;
-}
-
-.work img {
-  padding: 6% 0 6% 0;
-}
-
-.work p {
-  padding: 6% 0 6% 0;
-  margin: 0 24px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -212,24 +209,62 @@ li {
   color: #dcdce8;
 }
 
+.work {
+  display: flex;
+  flex-direction: column;
+}
+
+.work header {
+  align-items: left;
+}
+
+.work h1 {
+  padding: 84px 0 33px 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.37px;
+  color: #9490ff;
+  text-align: left;
+}
+
+.work h2 {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.37px;
+  color: #fff;
+  text-align: left;
+}
+
+.work img {
+  padding: 48px 0 24px 0;
+}
+
 .work ul {
   display: grid; /* Nested Grid */
   grid-template-columns: repeat(7, auto);
-  padding: 0;
-  margin: 0 24px;
+  margin: 0;
+  align-items: center;
+  padding-left: 0;
 }
 
 .work li {
-  margin: auto;
-  padding: 7px;
+  margin: 0;
+  padding: 0;
+}
+
+.work a {
+  align-items: center;
 }
 
 #work-button {
-  background-color: #7d73fc;
+  background: #7d73fc;
   border: none;
   color: white;
   padding: 12px;
-  margin-left: 24px;
   align-self: flex-start;
   text-align: center;
   font-size: 12px;
