@@ -1,11 +1,8 @@
 body {
   background: #191765;
-  max-width: 375px;
   position: relative;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-image: url(images/top-bg.png);
-  background-repeat: no-repeat;
 }
 
 main {
@@ -21,22 +18,14 @@ section {
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 72px;
-  letter-spacing: 0.37px;
   margin: 0;
   color: #7d73fc;
   text-align: center;
 }
 
 h2 {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 44px;
-  letter-spacing: 0.37px;
-  margin: 0;
   color: white;
+  text-align: center;
 }
 
 p {
@@ -44,7 +33,6 @@ p {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.37px;
-  margin-top: 50px;
   text-align: center;
   align-self: center;
   color: #c8c8d4;
@@ -57,80 +45,102 @@ a {
 
 li {
   list-style: none;
-  padding: 10px;
 }
 
 /* Nav Start */
 .flex-nav ul {
   display: flex;
   margin: 0;
+  padding: 0;
   align-items: center;
 }
 
-.flex-items {
+.nav-name {
+  flex: 1;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 20px;
-  margin: 0 5px;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.nav-name a {
+  margin: 16px 24px;
+}
+
+.nav-item {
   text-align: center;
 }
 
-#nav-name {
-  flex: 1;
-}
-
-.icon {
-  width: 50%;
+.nav-item img {
+  margin: 16px 24px;
 }
 
 /* Nav End */
 
-/* Section Headline Start */
+/* Headline Start */
 .headline {
   display: flex;
   flex-direction: column;
-  margin: 12px 0;
 }
 
-#flex-box-p {
-  width: 327px;
-  height: 170px;
+.headline h1 {
+  font-weight: 700; /* size 90, lineheight 105 */
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 0.37px;
+  margin: 12px 0; /* margin: 24px 0px */
 }
 
-/* Section Headline End */
+.headline h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 12px 0; /* margin: 24px 0px */
+}
 
-/* Section About Start */
+.headline p {
+  min-width: 327px;
+  min-height: 170px;
+  max-width: 447px;
+  max-height: 155px;
+  margin: 40px 24px 0;
+}
+
+/* Headline End */
+
+/* About Start */
 .about {
-  margin-left: 6%;
   display: flex;
   flex-direction: column;
-  width: 327px;
 }
 
-.flex-list-container {
+.about div {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 32px;
+  margin: 32px 0 33px;
+  align-items: center;
 }
 
-.flex-list-font ul {
+.about ul {
+  align-self: center;
   font-weight: 300;
   line-height: 12px;
   margin: 0;
-  margin-bottom: 33px;
+}
+
+.about li {
+  padding: 7px;
 }
 
 .flex-list-title {
   font-weight: 500;
   line-height: 24px;
-  margin-bottom: 5.33px;
   color: #9490ff;
   padding-top: 0;
 }
 
-/* Section About End */
+/* About End */
 
-/* Section Social Start */
+/* Social Start */
 .social {
   display: flex;
   flex-direction: column;
@@ -151,9 +161,9 @@ li {
   padding: 0%;
 }
 
-/* Section Social End */
+/* Social End */
 
-/* Section Work Start */
+/* Work Start */
 .workbg {
   background: url(images/middle-bg.png);
   background-repeat: no-repeat;
@@ -163,7 +173,6 @@ li {
 .work {
   display: flex; /* Flexbox */
   flex-direction: column;
-  width: 375px;
 }
 
 .work h1 {
@@ -203,14 +212,16 @@ li {
   color: #dcdce8;
 }
 
-.workul {
+.work ul {
   display: grid; /* Nested Grid */
   grid-template-columns: repeat(7, auto);
   padding: 0;
+  margin: 0 24px;
 }
 
-.workul li {
+.work li {
   margin: auto;
+  padding: 7px;
 }
 
 #work-button {
@@ -238,9 +249,9 @@ li {
   background: #2a2b33;
 }
 
-/* Section Work End */
+/* Work End */
 
-/* Section Contact Start */
+/* Contact Start */
 form {
   display: flex;
   flex-direction: column;
@@ -274,12 +285,16 @@ form {
 
 .contact p {
   margin: 24px 0 16px 0;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
   text-align: center;
   color: #f5f5ff;
+  min-width: 327px;
+  min-height: 105px;
+  max-width: 684px;
+  max-height: 61px;
 }
 
 .contact ul {
@@ -300,7 +315,7 @@ form {
   padding: 0;
 }
 
-.input {
+.form-input {
   flex: 1;
   width: 100%;
   border: 0;
@@ -336,9 +351,9 @@ form {
   background: #2a2b33;
 }
 
-/* Section Contact End */
+/* Contact End */
 
-/* Section Footer Start */
+/* Footer Start */
 footer {
   border-top: 1px solid #3a3837;
   margin-top: 71px;
@@ -395,4 +410,4 @@ footer {
   margin-bottom: 8px;
 }
 
-/* Section Footer Start */
+/* Footer End */
