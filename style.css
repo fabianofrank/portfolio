@@ -78,7 +78,6 @@ footer {
   line-height: 20px;
 }
 
-
 /* Nav End */
 
 /* Headline Start */
@@ -115,7 +114,6 @@ footer {
   color: #c8c8d4;
   max-width: 327px;
   max-height: 170px;
-  line-height: 28px;
   margin: 0 24px 33px 24px;
 }
 
@@ -201,10 +199,6 @@ footer {
   flex-direction: column;
 }
 
-.work header {
-  align-items: left;
-}
-
 .work h1 {
   padding: 84px 0 33px 0;
   font-weight: 500;
@@ -231,9 +225,6 @@ footer {
 }
 
 .work p {
-  min-width: 327px;
-  min-height: 170px;
-  line-height: 28px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -242,12 +233,13 @@ footer {
   color: #dcdce8;
   margin: 0 24px;
   padding: 24px 24px 0 24px;
+  min-width: 327px;
+  min-height: 170px;
 }
 
 .work ul {
   display: grid; /* Nested Grid */
   grid-template-columns: repeat(7, auto);
-  padding-left: 0;
   align-items: center;
   padding: 24px;
   margin: 0 24px;
