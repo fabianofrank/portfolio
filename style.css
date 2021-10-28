@@ -152,12 +152,7 @@ footer {
 
 .about li {
   padding: 7px;
-  transition: text-decoration .9s ease-in-out;
-}
-
-.about li:hover {
-  text-decoration: underline;
-  text-decoration-color: white;
+  transition: text-decoration 0.9s ease-in-out;
 }
 
 .list-title {
@@ -179,11 +174,6 @@ footer {
   display: flex;
   padding: 0;
   margin: 48px 0 28px;
-}
-
-.social li:hover {
-  animation-duration: 0.3s;
-  animation-name: bounce;
 }
 
 .social li {
@@ -412,11 +402,6 @@ form {
   padding: 0;
 }
 
-.social-footer li:hover {
-  animation-duration: 0.3s;
-  animation-name: bounce;
-}
-
 .social-footer img {
   width: 36px;
   padding: 0;
@@ -499,6 +484,21 @@ form {
 @keyframes bounce {
   0%, 100% {transform: translateY(0);} 
   50% {transform: translateY(-10px);} 
+}
+
+.about li:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.social li:hover {
+  animation-duration: 0.3s;
+  animation-name: bounce;
+}
+
+.social-footer li:hover {
+  animation-duration: 0.3s;
+  animation-name: bounce;
 }
 
 /* Animations End */
