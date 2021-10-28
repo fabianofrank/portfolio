@@ -5,21 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="queries.css">
   <title>Frank's Portfolio</title>
 </head>
 
 <body>
-  <header>
+  <header class="nav">
     <nav class="flex-nav">
       <ul>
         <li class="nav-name"><a href="#">Fabiano Frank</a></li>
-        <li class="nav-item"><img class="icon" src="images/menu.svg" alt="mail-box"></li>
+        <li class="nav-item display-query"><img class="icon" src="images/menu.svg" alt="mail-box"></li>
+        <li class="nav-item display-none"><a href="#">Portfolio</a></li>
+        <li class="nav-item display-none"><a href="#">About</a></li>
+        <li class="nav-item display-none"><a href="#">Contact</a></li>
+        <li class="nav-item display-none"><img src="images/mail.png" alt=""></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="headline">
+    <section class="headline headline-bg">
       <header>
         <h1>Fabiano Frank</h1>
         <h2>Software Developer</h2>
@@ -27,19 +32,19 @@
       <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,  don’t hestiate to contact me.</p>
     </section>
 
-    <section class="about">
-      <img src="images/vector.png" alt="separation-line">
+    <section class="about about-bg">
+      <div class="vector-about"></div>
 
-      <div>
+      <div class="about-div">
         <ul>
-          <li class="flex-list-title">Language</li>
+          <li class="list-title">Language</li>
           <li><a href="#">Javascript</a></li>
           <li><a href="#">Ruby</a></li>
           <li><a href="#">HTML</a></li>
           <li><a href="#">CSS</a></li>
         </ul>
         <ul>
-          <li class="flex-list-title">Frameworks</li>
+          <li class="list-title">Frameworks</li>
           <li><a href="#">Boostrap</a></li>
           <li><a href="#">Ruby on Rails</a></li>
           <li><a href="#">RSPec</a></li>
@@ -47,7 +52,7 @@
           <li><a href="#">Selenium</a></li>
         </ul>
         <ul>
-          <li class="flex-list-title">Skills</li>
+          <li class="list-title">Skills</li>
           <li><a href="#">Codekit</a></li>
           <li><a href="#">Github</a></li>
           <li><a href="#">Codepen</a></li>
@@ -56,11 +61,16 @@
         </ul>
       </div>
 
-      <img src="images/vector.png" alt="separation-line">
+      <div class="vector-about"></div>
+
     </section>
 
     <section class="social">
-      <ul class="footer-icons">
+      <div class="display-none">
+        <a href="#"><img src="images/arrow.svg" alt="scroll-down-recent-work"></a>
+      </div>
+      
+      <ul>
         <li><a href="#"><img src="images/github.svg" alt="github"></a></li>
         <li><a href="#"><img src="images/linkedin.svg" alt="linkedin"></a></li>
         <li><a href="#"><img src="images/angelist.svg" alt="angelist"></a></li>
@@ -73,13 +83,17 @@
       </div>
     </section>
 
-    <section class="work">
-        <h1>MY RECENT WORK</h1>
-        <img src="images/vector.png" alt="separation-line">
-        <section class="work">
-          <img src="images/placeholder.png" alt="image">
-          <h2>Multi-Post Stories</h2>
-          <div>
+    <section class="work post-bg">
+        <header>
+          <h1>MY RECENT WORK</h1>
+          <div class="vector-work"></div>
+        </header>
+
+        <section class="posts post1-bg">
+          <img class="resize-img" src="images/placeholder.png" alt="image">
+          
+          <div class="post-content">
+            <h2>Multi-Post Stories</h2>
             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
             <ul>
               <li><a href="#">CSS</a></li>
@@ -93,11 +107,73 @@
             <button id="work-button">See Project</button>
           </div>
         </section>
+
+        <section class="posts post2-bg">
+          <img class="resize-img display-query" src="images/placeholder.png" alt="image">
+
+          <div>
+            <h2>Multi-Post Stories</h2>
+            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+            <ul>
+              <li><a href="#">CSS</a></li>
+              <li><img src="images/divider.png" alt=""></li>
+              <li><a href="#">HTML</a></li>
+              <li><img src="images/divider.png" alt=""></li>
+              <li><a href="#">Bootstrap</a></li>
+              <li><img src="images/divider.png" alt=""></li>
+              <li><a href="#">Ruby</a></li>
+            </ul>
+            <button id="work-button">See Project</button>
+          </div>
+
+          <img class="resize-img display-none" src="images/placeholder.png" alt="image">
+        </section>
+
+        <section class="posts post3-bg">
+          <img class="resize-img" src="images/placeholder.png" alt="image">
+          
+          <div>
+            <h2>Multi-Post Stories</h2>
+            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+            <ul>
+              <li><a href="#">CSS</a></li>
+              <li><img src="images/divider.png" alt=""></li>
+              <li><a href="#">HTML</a></li>
+              <li><img src="images/divider.png" alt=""></li>
+              <li><a href="#">Bootstrap</a></li>
+              <li><img src="images/divider.png" alt=""></li>
+              <li><a href="#">Ruby</a></li>
+            </ul>
+            <button id="work-button">See Project</button>
+          </div>
+        </section>
+
+        <section class="posts post4-bg">
+          <img class="resize-img display-query" src="images/placeholder.png" alt="image">
+
+          <div>
+            <h2>Multi-Post Stories</h2>
+            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+            <ul>
+              <li><a href="#">CSS</a></li>
+              <li><img src="images/divider.png" alt=""></li>
+              <li><a href="#">HTML</a></li>
+              <li><img src="images/divider.png" alt=""></li>
+              <li><a href="#">Bootstrap</a></li>
+              <li><img src="images/divider.png" alt=""></li>
+              <li><a href="#">Ruby</a></li>
+            </ul>
+            <button id="work-button">See Project</button>
+          </div>
+
+          <img class="resize-img display-none" src="images/placeholder.png" alt="image">
+        </section>
     </section>
 
     <section class="contact">
         <header>
-          <h1>CONTACT US</h1>
+          <h1 class="display-query">CONTACT US</h1>
+          <h1 class="display-none">Let's chat!</h1>
           <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         </header>
         
@@ -130,7 +206,7 @@
 
       <div id="flex-email">
         <a href="#">emailhere@email.com</a>
-        <img src="images/Shape.png" alt="end indicator">
+        <img class="display-query" src="images/Shape.png" alt="end indicator">
       </div>
     </section>
   </footer>
