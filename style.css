@@ -152,6 +152,12 @@ footer {
 
 .about li {
   padding: 7px;
+  transition: text-decoration .9s ease-in-out;
+}
+
+.about li:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 .list-title {
