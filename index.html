@@ -10,17 +10,21 @@
 </head>
 
 <body>
-  <header>
+  <header class="nav">
     <nav class="flex-nav">
       <ul>
         <li class="nav-name"><a href="#">Fabiano Frank</a></li>
-        <li class="nav-item"><img class="icon" src="images/menu.svg" alt="mail-box"></li>
+        <li class="nav-item display-query"><img class="icon" src="images/menu.svg" alt="mail-box"></li>
+        <li class="nav-item display-none"><a href="#">Portfolio</a></li>
+        <li class="nav-item display-none"><a href="#">About</a></li>
+        <li class="nav-item display-none"><a href="#">Contact</a></li>
+        <li class="nav-item display-none"><img src="images/mail.png" alt=""></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="headline">
+    <section class="headline headline-bg">
       <header>
         <h1>Fabiano Frank</h1>
         <h2>Software Developer</h2>
@@ -28,7 +32,7 @@
       <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,  don’t hestiate to contact me.</p>
     </section>
 
-    <section class="about">
+    <section class="about about-bg">
       <div class="vector-about"></div>
 
       <div class="about-div">
@@ -79,16 +83,16 @@
       </div>
     </section>
 
-    <section class="work">
+    <section class="work post-bg">
         <header>
           <h1>MY RECENT WORK</h1>
           <div class="vector-work"></div>
         </header>
 
-        <section class="posts">
+        <section class="posts post1-bg">
           <img class="resize-img" src="images/placeholder.png" alt="image">
           
-          <div>
+          <div class="post-content">
             <h2>Multi-Post Stories</h2>
             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
             <ul>
@@ -104,7 +108,7 @@
           </div>
         </section>
 
-        <section class="posts">
+        <section class="posts post2-bg">
           <img class="resize-img display-query" src="images/placeholder.png" alt="image">
 
           <div>
@@ -125,7 +129,7 @@
           <img class="resize-img display-none" src="images/placeholder.png" alt="image">
         </section>
 
-        <section class="posts">
+        <section class="posts post3-bg">
           <img class="resize-img" src="images/placeholder.png" alt="image">
           
           <div>
@@ -144,7 +148,7 @@
           </div>
         </section>
 
-        <section class="posts">
+        <section class="posts post4-bg">
           <img class="resize-img display-query" src="images/placeholder.png" alt="image">
 
           <div>
@@ -201,7 +205,7 @@
 
       <div id="flex-email">
         <a href="#">emailhere@email.com</a>
-        <img src="images/Shape.png" alt="end indicator">
+        <img class="display-query" src="images/Shape.png" alt="end indicator">
       </div>
     </section>
   </footer>
