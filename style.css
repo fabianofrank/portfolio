@@ -152,6 +152,7 @@ footer {
 
 .about li {
   padding: 7px;
+  transition: text-decoration 0.9s ease-in-out;
 }
 
 .list-title {
@@ -478,3 +479,27 @@ form {
 }
 
 /* Background End */
+
+/* Animations Start */
+@keyframes bounce {
+  0%,
+  100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.about li:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.social li:hover {
+  animation-duration: 0.3s;
+  animation-name: bounce;
+}
+
+.social-footer li:hover {
+  animation-duration: 0.3s;
+  animation-name: bounce;
+}
+
+/* Animations End */
