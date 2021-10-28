@@ -57,22 +57,45 @@
     padding: 0%;
   }
 
-  
-
   .posts {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-end;
+    text-align: left;
   }
 
   .posts div {
-    padding: 48px 0 0 24px;
-    max-width: 1156px;
+    margin-top: 48px;
     max-height: 448px;
+    max-width: 405px;
   }
 
-  .posts p {
-    max-width: 448px;
+  .resize-img {
+    width: 684px;
+    height: 448px;
+    padding-bottom: 0;
+  }
+  
+  .display-none {
+    display: block;
+  }
+
+  .display-query {
+    display: none;
+  }
+
+  .work h2 {
+    padding: 0;
+    height: 105px;
+    margin: 0 0 24px 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+    align-items: center;
+  }
+
+  .work p {
     max-height: 140px;
     font-size: 20px;
     line-height: 28px;

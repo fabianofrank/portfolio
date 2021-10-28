@@ -185,18 +185,23 @@ li {
 .vector-work {
   border: 1px solid #646369;
   width: 80vw;
+  min-width: 327px;
 }
 
 .posts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-.posts p {
+.posts div {
+  margin: 0 24px;
   max-width: 327px;
-  max-height: 170px;
+}
+
+.work p {
+  min-width: 327px;
+  min-height: 170px;
   line-height: 28px;
   margin: 0 24px 33px 24px;
   padding: 24px 0 24px 0;
@@ -239,21 +244,29 @@ li {
   text-align: left;
 }
 
-.work img {
+.resize-img {
   padding: 48px 0 24px 0;
+}
+
+.display-none {
+  display: none;
 }
 
 .work ul {
   display: grid; /* Nested Grid */
   grid-template-columns: repeat(7, auto);
   margin: 0;
-  align-items: center;
   padding-left: 0;
+  align-items: center;
+  padding: 24px 0;
 }
 
 .work li {
   margin: 0;
   padding: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .work a {
