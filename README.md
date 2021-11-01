@@ -4,7 +4,7 @@
 
 This project is a demonstration of the basic understanding of Github Flow by using Pull Requests to adress issues. Alongside, there is the strengthening of HTML and CSS skill by demanding a proper HTML semantics within the use of Box Models, Flexboxes and Grids.
 
-Disclaimer: This project is a submission to be code reviewed at Microverse. This is a Porfolio made inspired by the Figma's [templates](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A2346) made available by Microverse.
+Disclaimer: This project is a submission to be code reviewed at Microverse. This Porfolio was inspired by the Figma's [templates](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A2346) made available by Microverse.
 
 ## Demo
 Get the live link [here](https://fabianofrank.github.io/portfolio/)
