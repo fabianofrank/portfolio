@@ -2,14 +2,12 @@
 
 # Portfolio
 
-This project consists in following the basic Github Flow by using Pull Requests to adress issues regarding issues that might came up.
+This project is a demonstration of the basic understanding of Github Flow by using Pull Requests to adress issues. Alongside, there is the strengthening of HTML and CSS skill by demanding a proper HTML semantics within the use of Box Models, Flexboxes and Grids.
 
-This Portfolio Project strengthens HTML and CSS skills by demanding a proper use of HTML semantics and their relational use of Box Models, Flexboxes and Grid.
+Disclaimer: This project is a submission to be code reviewed at Microverse. This is a Porfolio made inspired by the Figma's [templates](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A2346) made available by Microverse.
 
-Disclaimer: This is the second project submission Micronauts will send to code review at Microverse. This is a Porfolio made inspired by the Figma's templates made available by Microverse.
-
-
-
+## Demo
+Get the live link [here](https://fabianofrank.github.io/portfolio/)
 
 ## Built With
 
@@ -17,23 +15,13 @@ Disclaimer: This is the second project submission Micronauts will send to code r
 - HTML and CSS
 - GIT
 
-
-
 ## Getting Started
-To get a local copy up and running follow these simple example [steps](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-
-
-### Templates
-
-- Figma: [Templates](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A2346)
-
+To get a local copy up and running follow these [steps](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 ### Prerequisites
 Git
-Figma Templates
 
-
-### Setup
+### Setup Git
 
 Linux: sudo apt-get install git
 
@@ -59,8 +47,3 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-
-## 📝 License
-
-This project is not licensed.
