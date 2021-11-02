@@ -25,7 +25,7 @@
   Would be nice, when the width is about to breakpoint, that the a tags could be a bit bigger, for tablet's users usage, for example:
   https://github.com/fabianofrank/portfolio/blob/9dad55bcbbe06c2447d1f34beb457ad69074495d/index.html#L101
 
-- Interaction
-- Moving content
-- Multimedia
-- The basic structure of the page
+- Interaction: no issues found
+- Moving content: no issues found
+- Multimedia: no issues found
+- The basic structure of the page: no issues found
