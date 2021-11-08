@@ -1,8 +1,8 @@
 function myFunction() {
-  var x = document.getElementById("menu");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  var div = document.getElementById("menu");
+  if (div.style.display === "block") {
+    div.style.display = "none";
   } else {
-    x.style.display = "block";
+    div.style.display = "block";
   }
 }

@@ -505,8 +505,10 @@ form {
 /* Animations End */
 
 .topnav {
-  overflow: hidden;
-  position: relative;
+  /* overflow: hidden; */
+  /* position: relative; */
+  display: flex;
+  align-items: flex-end;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -532,6 +534,7 @@ form {
 /* Style the hamburger menu */
 .topnav a.icon {
   display: block;
+  padding: 0;
   position: absolute;
   right: 0;
   top: 0;
@@ -542,7 +545,21 @@ form {
   color: black;
 }
 
+.nav-menu {
+  background-color: #191765;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 109px;
+  padding-left: 40px;
+}
+
+.nav-menu a {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
 /* Style the active link (or home/logo) */
-.active {
-  color: white;
+a#homebutton.active {
+  display: none;
 }
