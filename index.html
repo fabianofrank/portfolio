@@ -6,20 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="queries.css">
+  <script src="menu.js"></script>
   <title>Frank's Portfolio</title>
 </head>
 
 <body>
   <header class="nav">
     <nav class="flex-nav">
-      <ul>
+      <!-- <ul>
         <li class="nav-name"><a href="#">Fabiano Frank</a></li>
-        <li class="nav-item display-query"><img class="icon" src="images/menu.svg" alt="mail-box"></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <img class="icon nav-item display-query" src="images/menu.svg" alt="mail-box"></li>
+        </a>
         <li class="nav-item display-none"><a href="#">Portfolio</a></li>
         <li class="nav-item display-none"><a href="#">About</a></li>
         <li class="nav-item display-none"><a href="#">Contact</a></li>
         <li class="nav-item display-none"><img src="images/mail.png" alt="main-icon"></li>
-      </ul>
+      </ul> -->
+      
+      <div class="topnav">
+        <a href="#home" class="active">Fabiano Frank</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="menu">
+          <a href="#portfolio" onclick="myFunction()">Portfolio</a>
+          <a href="#about" onclick="myFunction()">About</a>
+          <a href="#contact" onclick="myFunction()">Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <img class="icon nav-item display-query" src="images/menu.svg" alt="mail-box"></li>
+        </a>
+      </div>
+
     </nav>
   </header>
 
@@ -32,7 +50,7 @@
       <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,  don’t hestiate to contact me.</p>
     </section>
 
-    <section class="about about-bg">
+    <section class="about about-bg" id="about">
       <div class="vector-about"></div>
 
       <div class="about-div">
@@ -83,7 +101,7 @@
       </div>
     </section>
 
-    <section class="work post-bg">
+    <section class="work post-bg" id="portfolio">
         <header>
           <h1>MY RECENT WORK</h1>
           <div class="vector-work"></div>
@@ -170,7 +188,7 @@
         </section>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <header>
           <h1 class="display-query">CONTACT US</h1>
           <h1 class="display-none">Let's chat!</h1>
