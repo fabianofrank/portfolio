@@ -540,11 +540,6 @@ form {
   top: 0;
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  color: black;
-}
-
 .nav-menu {
   background-color: #191765;
   width: 100vw;
@@ -553,10 +548,28 @@ form {
   padding-left: 40px;
 }
 
+.nav-menu div {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1;
+  grid-template-columns: 85% 15%;
+}
+
 .nav-menu a {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
   font-size: 24px;
   line-height: 32px;
   font-weight: 500;
+}
+
+.nav-menu img {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 /* Style the active link (or home/logo) */
