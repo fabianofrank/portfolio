@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #191765;
   position: relative;
@@ -45,20 +49,17 @@ footer {
 
 /* Nav Start */
 
-.topnav {
+.flex-nav {
   overflow: hidden;
   position: relative;
-  display: flex;
-  align-items: flex-end;
 }
 
-.topnav #menu {
+.flex-nav #menu {
   display: none;
   background: #191765;
-  margin-top: -20px;
 }
 
-.topnav a {
+.flex-nav a {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
@@ -66,13 +67,23 @@ footer {
   display: block;
 }
 
-/* Style the hamburger menu */
-.topnav a.icon {
-  display: block;
-  padding: 0;
-  position: absolute;
+#icon {
   right: 0;
   top: 0;
+  display: block;
+  padding: 1em;
+  position: absolute;
+}
+
+#icon:target {
+  display: none;
+}
+
+#close {
+  top: 0;
+  right: 0;
+  display: block;
+  position: absolute;
 }
 
 .nav-menu {
@@ -86,7 +97,7 @@ footer {
 .nav-menu div {
   display: grid;
   align-items: center;
-  grid-template-columns: 85% 15%;
+  grid-template-columns: 80% 20%;
 }
 
 .nav-menu a {
@@ -104,44 +115,6 @@ footer {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 1;
-}
-
-a#homebutton.active {
-  display: none;
-}
-
-.flex-nav {
-  position: absolute;
-  width: 100%;
-}
-
-.flex-nav ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-
-.nav-name {
-  flex: content;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 16px;
-}
-
-.nav-name a {
-  margin: 16px 24px;
-}
-
-.nav-item {
-  text-align: center;
-  margin: 16px 12px;
-}
-
-.nav-item a {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
 }
 
 /* Nav End */
@@ -509,6 +482,12 @@ form {
 /* Queries End */
 
 /* Background Start */
+.navbg {
+  background: url(images/mobile/toop-menu-bg.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
 .headline-bg {
   background: url(images/mobile/circle-left.png);
   background-repeat: no-repeat;
@@ -569,4 +548,3 @@ form {
 }
 
 /* Animations End */
-
