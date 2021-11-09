@@ -50,7 +50,6 @@ footer {
 /* Nav Start */
 
 .flex-nav {
-  overflow: hidden;
   position: relative;
 }
 
@@ -67,15 +66,11 @@ footer {
 }
 
 #icon {
+  display: block;
   right: 0;
   top: 0;
-  display: block;
   padding: 1em;
   position: absolute;
-}
-
-#icon:target {
-  display: none;
 }
 
 #close {
@@ -490,7 +485,7 @@ form {
 /* Queries End */
 
 /* Background Start */
-.header-bg {
+#header-bg {
   background: url(images/mobile/toop-menu-bg.png), url(images/mobile/bot-menu-bg.png);
   background-repeat: no-repeat, no-repeat;
   background-position: left center, right bottom;

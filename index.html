@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="header-bg">
+  <header id="header-bg">
     <nav class="flex-nav">
       <a href="#home">
         Fabiano Frank
@@ -24,20 +24,21 @@
         </div>
         <div>
           <a href="#about" onclick="mobileMenu()">About</a>
-          <img src="images/mobile/arrow.png" alt="">
+          <img src="images/mobile/arrow.png" alt="seeabout">
         </div>
         <div>
           <a href="#contact" onclick="mobileMenu()">Contact</a>
-          <img src="images/mobile/arrow.png" alt="">
+          <img src="images/mobile/arrow.png" alt="seecontact">
         </div>
+        <a id="close" href="javascript:void(0);" onclick="mobileMenu()">
+          <img class="display-query" src="images/mobile/close.png" alt="close-menu"></li>
+        </a>
       </div>
-
-      <a href="javascript:void(0);" id="icon" onclick="mobileMenu()">
-        <img class="display-query" src="images/menu.svg" alt="mail-box"></li>
-      </a>
-      <a href="javascript:void(0);" id="close" onclick="mobileMenu()">
-        <img class="display-query" src="images/mobile/close.png" alt="mail-box"></li>
-      </a>
+      <div id="hideDiv">
+        <a id="icon" href="javascript:void(0);" onclick="mobileMenu()">
+          <img class="display-query" src="images/menu.svg" alt="open-menu" onclick="hideDiv()"></li>
+        </a>
+      </div>
     </nav>
 
     <nav>
@@ -54,7 +55,7 @@
 
   <main>
     <section class="headline headline-bg">
-      <header>
+      <header id="home">
         <h1>Fabiano Frank</h1>
         <h2>Software Developer</h2>
       </header>
