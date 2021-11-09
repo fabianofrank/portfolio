@@ -56,7 +56,6 @@ footer {
 
 .flex-nav #menu {
   display: none;
-  background: #191765;
 }
 
 .flex-nav a {
@@ -87,8 +86,6 @@ footer {
 }
 
 .nav-menu {
-  background-color: #191765;
-  background: url(images/mobile/toop-menu-bg.png);
   width: 100vw;
   height: 100vh;
   padding-top: 108px;
@@ -118,12 +115,12 @@ footer {
   grid-row-end: 1;
 }
 
-.desknav {
+.desk-nav {
   display: flex;
   justify-content: flex-end;
 }
 
-.desknav li {
+.desk-nav li {
   margin: 0;
   padding: 1em;
 }
@@ -493,10 +490,10 @@ form {
 /* Queries End */
 
 /* Background Start */
-.navbg {
-  background: url(images/mobile/toop-menu-bg.png);
-  background-repeat: no-repeat;
-  background-position: right top;
+.header-bg {
+  background: url(images/mobile/toop-menu-bg.png), url(images/mobile/bot-menu-bg.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, right bottom;
 }
 
 .headline-bg {
