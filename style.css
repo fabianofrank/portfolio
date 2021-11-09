@@ -88,9 +88,10 @@ footer {
 
 .nav-menu {
   background-color: #191765;
+  background: url(images/mobile/toop-menu-bg.png);
   width: 100vw;
   height: 100vh;
-  padding-top: 109px;
+  padding-top: 108px;
   padding-left: 40px;
 }
 
@@ -115,6 +116,16 @@ footer {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 1;
+}
+
+.desknav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.desknav li {
+  margin: 0;
+  padding: 1em;
 }
 
 /* Nav End */
