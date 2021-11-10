@@ -318,6 +318,113 @@ footer {
 
 /* Work End */
 
+/* Modal Start */
+.modal {
+  /* display: none;
+  position: fixed; */
+  border: 1px solid #fff;
+  border: 1px solid red;
+  width: 100%;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fff;
+  max-width: 1156px;
+  min-width: 327px;
+  width: 80%;
+  margin: 20% auto;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.modal p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #dcdce8;
+  margin: 24px;
+  padding: 0;
+  min-width: 279px;
+  min-height: 289px;
+}
+
+.modal-social {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  align-items: center;
+  padding: 24px;
+  margin: 0 24px;
+}
+
+.modal-social img {
+  padding: 0 6px;
+}
+
+.responsive {
+  max-width: 90%;
+  height: auto;
+}
+
+#modal-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#modal-top h2 {
+  flex: 1;
+}
+
+#modal-top img {
+  width: 10%;
+  height: 10%;
+  padding: 6px;
+}
+
+#btn-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #7d73fc;
+  border: none;
+  color: white;
+  padding: 12px;
+  margin: 12px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#modal-button img {
+  padding: 6px;
+}
+
+#modal-button:hover {
+  background: #7d73ec;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+#modal-button:active {
+  background: #5e42d7;
+}
+
+#modal-button:disabled {
+  background: #2a2b33;
+}
+/* Modal End */
+
 /* Contact Start */
 form {
   display: flex;

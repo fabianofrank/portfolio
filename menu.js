@@ -10,3 +10,6 @@ function mobileMenu() {
     img.style.display = 'none';
   }
 }
+
+const body = document.body
+body.append("Hello World")
