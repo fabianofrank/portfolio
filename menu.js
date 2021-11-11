@@ -78,6 +78,7 @@ for (const index in arr) {
   `;
 }
 
+/* eslint-disable no-unused-vars */
 function mobileMenu() {
   const div = document.getElementById('menu');
   const img = document.getElementById('hideMenu');
@@ -103,3 +104,5 @@ function myModal() {
     modal.style.display = 'block';
   }
 }
+
+/* eslint-enable no-unused-vars */

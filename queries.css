@@ -178,7 +178,7 @@
   }
 
   .responsive {
-    max-width: 1108px;
+    max-width: 90%;
     max-height: 505px;
     height: auto;
     padding: 48px 0 24px 0;
