@@ -27,7 +27,7 @@ const projects = {
 };
 
 const arr = ['pink', 'yellow', 'tropical', 'windows'];
-for (const index in arr) {
+Object.keys(arr).forEach((index) => {
   const projectName = arr[index];
   document.getElementById('works').innerHTML += `
   <section class="${projectName}"">
@@ -48,9 +48,9 @@ for (const index in arr) {
     <button class="work-button" id="work-button-${projectName}" href="javascript:void(0);" onclick="myModal()">See Project</button>
   </div>
   </section>`;
-}
+});
 
-for (const index in arr) {
+Object.keys(arr).forEach((index) => {
   const projectName = arr[index];
   document.getElementById('modal-popup').innerHTML += `
   <div class="modal-content">
@@ -76,7 +76,7 @@ for (const index in arr) {
     <button id="modal-button">See Source <img src="images/github.png" alt="open"></button>
   </div>
   `;
-}
+});
 
 /* eslint-disable no-unused-vars */
 function mobileMenu() {
