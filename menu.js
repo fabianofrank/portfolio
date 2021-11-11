@@ -99,7 +99,6 @@ function mobileMenu() {
 
 function myModal() {
   const modal = document.getElementById('modal-popup');
-  const btn = document.getElementById('work-button-${projectName}')
   if (modal.style.display === 'block') {
     modal.style.display = 'none';
   } else {
