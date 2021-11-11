@@ -1,30 +1,4 @@
 // eslint-disable-next-line no-unused-vars
-function mobileMenu() {
-  const div = document.getElementById('menu');
-  const img = document.getElementById('hideMenu');
-  const bg = document.getElementById('header-bg');
-  if (div.style.display === 'block') {
-    div.style.display = 'none';
-    img.style.display = 'block';
-    bg.style.background = 'none';
-  } else {
-    div.style.display = 'block';
-    img.style.display = 'none';
-    bg.style.background = 'url(images/mobile/toop-menu-bg.png), url(images/mobile/bot-menu-bg.png)';
-    bg.style.backgroundRepeat = 'no-repeat, no-repeat';
-    bg.style.backgroundPosition = 'left center, right bottom';
-  }
-}
-
-function myModal() {
-  const modal = document.getElementById('modal-popup');
-  if (modal.style.display === 'block') {
-    modal.style.display = 'none';
-  } else {
-    modal.style.display = 'block';
-  }
-}
-
 const projects = {
   pink: {
     title: 'Pink Way',
@@ -102,4 +76,30 @@ for (const index in arr) {
     <button id="modal-button">See Source <img src="images/github.png" alt="open"></button>
   </div>
   `;
+}
+
+function mobileMenu() {
+  const div = document.getElementById('menu');
+  const img = document.getElementById('hideMenu');
+  const bg = document.getElementById('header-bg');
+  if (div.style.display === 'block') {
+    div.style.display = 'none';
+    img.style.display = 'block';
+    bg.style.background = 'none';
+  } else {
+    div.style.display = 'block';
+    img.style.display = 'none';
+    bg.style.background = 'url(images/mobile/toop-menu-bg.png), url(images/mobile/bot-menu-bg.png)';
+    bg.style.backgroundRepeat = 'no-repeat, no-repeat';
+    bg.style.backgroundPosition = 'left center, right bottom';
+  }
+}
+
+function myModal() {
+  const modal = document.getElementById('modal-popup');
+  if (modal.style.display === 'block') {
+    modal.style.display = 'none';
+  } else {
+    modal.style.display = 'block';
+  }
 }

@@ -480,6 +480,10 @@ form {
   text-align: center;
 }
 
+.modal-social img {
+  padding: 0 14px;
+}
+
 #flex-email a {
   margin-top: 9px;
   margin-bottom: 27px;
@@ -520,7 +524,6 @@ form {
   width: 80%;
   margin: 20% auto;
   background: rgba(255, 255, 255, 0.16);
-  border: 1px solid #fff;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
 
@@ -543,10 +546,6 @@ form {
   align-items: center;
   padding: 24px;
   margin: 0 24px;
-}
-
-.modal-social img {
-  padding: 0 14px;
 }
 
 .responsive {
