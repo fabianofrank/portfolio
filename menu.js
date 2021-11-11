@@ -1,29 +1,55 @@
 // eslint-disable-next-line no-unused-vars
+function mobileMenu() {
+  const div = document.getElementById('menu');
+  const img = document.getElementById('hideMenu');
+  const bg = document.getElementById('header-bg');
+  if (div.style.display === 'block') {
+    div.style.display = 'none';
+    img.style.display = 'block';
+    bg.style.background = 'none';
+  } else {
+    div.style.display = 'block';
+    img.style.display = 'none';
+    bg.style.background = 'url(images/mobile/toop-menu-bg.png), url(images/mobile/bot-menu-bg.png)';
+    bg.style.backgroundRepeat = 'no-repeat, no-repeat';
+    bg.style.backgroundPosition = 'left center, right bottom';
+  }
+}
+
+function myModal() {
+  const modal = document.getElementById('modal-popup');
+  if (modal.style.display === 'block') {
+    modal.style.display = 'none';
+  } else {
+    modal.style.display = 'block';
+  }
+}
+
 const projects = {
   pink: {
     title: 'Pink Way',
     paragraph: ['A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.'],
     listed: ['images/divider.png', 'CSS', 'HTML', 'JavaScript'],
-    images: 'images/posts/post1.jpg'
- },
-    yellow: {
+    images: 'images/posts/post1.jpg',
+  },
+  yellow: {
     title: 'Yellow View',
     paragraph: ['A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.'],
     listed: ['images/divider.png', 'Tailwind CSS', 'HTML', 'Ruby'],
-    images: 'images/posts/post2.jpg'
- },
-    tropical: {
+    images: 'images/posts/post2.jpg',
+  },
+  tropical: {
     title: 'Tropical Cubes',
     paragraph: ['A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.'],
     listed: ['images/divider.png', 'React', 'HTML', 'Next.js'],
-    images: 'images/posts/post3.jpg'
- },
-    windows: {
+    images: 'images/posts/post3.jpg',
+  },
+  windows: {
     title: 'Windows Chips',
     paragraph: ['A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.'],
     listed: ['images/divider.png', 'React', 'Node.js', 'Next.js'],
-    images: 'images/posts/post4.jpg'
- },
+    images: 'images/posts/post4.jpg',
+  },
 };
 
 const arr = ['pink', 'yellow', 'tropical', 'windows'];
@@ -58,7 +84,7 @@ for (const index in arr) {
     <h2>${projects[projectName].title}</h2>
     <a href="javascript:void(0);" onclick="myModal()">
     <img src="images/mobile/close.png" alt="close-button">
-    </a>  
+    </a>
   </div>
   <img class="responsive" src="${projects[projectName].images}" alt="art-work">
   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.</p>
@@ -76,30 +102,4 @@ for (const index in arr) {
     <button id="modal-button">See Source <img src="images/github.png" alt="open"></button>
   </div>
   `;
-}
-
-function mobileMenu() {
-  const div = document.getElementById('menu');
-  const img = document.getElementById('hideMenu');
-  const bg = document.getElementById('header-bg');
-  if (div.style.display === 'block') {
-    div.style.display = 'none';
-    img.style.display = 'block';
-    bg.style.background = 'none';
-  } else {
-    div.style.display = 'block';
-    img.style.display = 'none';
-    bg.style.background = 'url(images/mobile/toop-menu-bg.png), url(images/mobile/bot-menu-bg.png)';
-    bg.style.backgroundRepeat = 'no-repeat, no-repeat';
-    bg.style.backgroundPosition = 'left center, right bottom';
-  }
-}
-
-function myModal() {
-  const modal = document.getElementById('modal-popup');
-  if (modal.style.display === 'block') {
-    modal.style.display = 'none';
-  } else {
-    modal.style.display = 'block';
-  }
 }
