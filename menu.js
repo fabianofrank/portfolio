@@ -30,7 +30,8 @@ const arr = ['pink', 'yellow', 'tropical', 'windows'];
 Object.keys(arr).forEach((index) => {
   const projectName = arr[index];
   document.getElementById('works').innerHTML += `
-  <section class="${projectName}"">
+  <div class="modal-bg"></div>
+  <section class="${projectName}">
   <img class="resize-img" src="${projects[projectName].images}" alt="work-image">
 
   <div class="post-content">
@@ -57,7 +58,7 @@ Object.keys(arr).forEach((index) => {
   <div id="modal-top">
     <h2>${projects[projectName].title}</h2>
     <a href="javascript:void(0);" onclick="myModal()">
-    <img src="images/mobile/close.png" alt="close-button">
+      <img src="images/mobile/close.png" alt="close-button">
     </a>
   </div>
   <img class="responsive" src="${projects[projectName].images}" alt="art-work">
@@ -98,6 +99,7 @@ function mobileMenu() {
 
 function myModal() {
   const modal = document.getElementById('modal-popup');
+  const btn = document.getElementById('work-button-${projectName}')
   if (modal.style.display === 'block') {
     modal.style.display = 'none';
   } else {
