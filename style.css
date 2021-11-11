@@ -511,19 +511,20 @@ form {
 }
 
 .modal {
-  background: rgba(162, 163, 174);
+  background-color: #191765;
 }
 
 .modal-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   border: 1px solid #fff;
   max-width: 1156px;
   min-width: 327px;
   width: 80%;
   margin: 20% auto;
-  background: rgba(255, 255, 255, 0.16);
+  background-color: rgba(255, 255, 255, 0.16);
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
 
