@@ -240,6 +240,7 @@ footer {
 .work {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .work h1 {
@@ -292,7 +293,7 @@ footer {
   align-items: center;
 }
 
-#work-button {
+.work-button {
   background: #7d73fc;
   border: none;
   color: white;
@@ -303,32 +304,40 @@ footer {
   font-weight: 500;
 }
 
-#work-button:hover {
+.work-button:hover {
   background: #7d73ec;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
-#work-button:active {
+.work-button:active {
   background: #5e42d7;
 }
 
-#work-button:disabled {
+.work-button:disabled {
   background: #2a2b33;
 }
 
 /* Work End */
 
 /* Modal Start */
-.modal {
-  /* display: none;
-  position: fixed; */
+#modal-popup {
+  display: none;
+  position: fixed;
   border: 1px solid #fff;
-  border: 1px solid red;
   width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+}
+
+.modal {
+  background:rgba(162, 163, 174,);
 }
 
 .modal-content {
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: center;
   border: 1px solid #fff;
@@ -336,7 +345,8 @@ footer {
   min-width: 327px;
   width: 80%;
   margin: 20% auto;
-  background: rgba(255, 255, 255, 0.16);
+  background: black;
+  /* background: rgba(255, 255, 255, 0.16); */
   border: 1px solid #FFFFFF;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
 }
@@ -381,7 +391,7 @@ footer {
   flex: 1;
 }
 
-#modal-top img {
+#modal-top a {
   width: 10%;
   height: 10%;
   padding: 6px;
@@ -592,12 +602,6 @@ form {
 /* Queries End */
 
 /* Background Start */
-#header-bg {
-  background: url(images/mobile/toop-menu-bg.png), url(images/mobile/bot-menu-bg.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: left center, right bottom;
-}
-
 .headline-bg {
   background: url(images/mobile/circle-left.png);
   background-repeat: no-repeat;

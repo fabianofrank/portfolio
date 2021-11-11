@@ -157,6 +157,14 @@
 
   /* Work End */
 
+  /* Modal Start */
+  .modal p {
+    max-width: 684px;
+    max-height: 236px;
+    min-height: 0;
+    margin: 40px 0 0 0;
+  }
+
   /* Footer Start */
   .social-footer {
     flex-direction: row;
