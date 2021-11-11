@@ -114,7 +114,6 @@
   .resize-img {
     max-width: 684px;
     max-height: 448px;
-    max-width: 90%;
     height: auto;
     padding: 48px 0 0 0;
   }
@@ -145,6 +144,7 @@
     font-size: 15px;
     line-height: 20px;
   }
+
   .work li {
     margin: 0;
     padding: 0;
@@ -158,9 +158,9 @@
   }
 
   /* Work End */
-  
+
   /* Modal Start */
-  
+
   .modal p {
     max-width: 684px;
     max-height: 236px;
@@ -208,7 +208,7 @@
     line-height: 24px;
     margin-top: 89px;
   }
-  
+
   /* Contact End */
 
   /* Footer Start */
