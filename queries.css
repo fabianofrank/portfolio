@@ -87,23 +87,42 @@
   /* Social End */
 
   /* Work Start */
-
-  .posts {
+  .pink {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
   }
 
-  .posts div {
-    margin-top: 48px;
-    max-height: 448px;
-    max-width: 405px;
+  .yellow {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+
+  .tropical {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .windows {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
   }
 
   .resize-img {
-    width: 684px;
-    height: 448px;
-    padding-bottom: 0;
+    max-width: 684px;
+    max-height: 448px;
+    max-width: 90%;
+    height: auto;
+    padding: 48px 0 0 0;
+  }
+
+  .post-content {
+    flex: 1;
+    max-width: 684px;
+    max-height: 448px;
   }
 
   .work p {
@@ -123,13 +142,9 @@
   }
 
   .work ul {
-    display: grid; /* Nested Grid */
-    grid-template-columns: repeat(7, auto);
-    align-items: center;
-    padding: 24px;
-    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
   }
-
   .work li {
     margin: 0;
     padding: 0;
@@ -140,6 +155,45 @@
 
   #work-button {
     margin: 0 24px;
+  }
+
+  /* Work End */
+  
+  /* Modal Start */
+  
+  .modal p {
+    max-width: 684px;
+    max-height: 236px;
+    min-height: 0;
+    margin: 40px 0 0 0;
+  }
+
+  #btn-align {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 310px;
+    height: 48px;
+    margin: 34px 0 90px 0;
+  }
+
+  .responsive {
+    max-width: 1108px;
+    max-height: 505px;
+    height: auto;
+    padding: 48px 0 24px 0;
+  }
+
+  /* Modal End */
+
+  /* Contact Start */
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 24px;
+    padding: 0;
   }
 
   .contact li {
@@ -154,16 +208,8 @@
     line-height: 24px;
     margin-top: 89px;
   }
-
-  /* Work End */
-
-  /* Modal Start */
-  .modal p {
-    max-width: 684px;
-    max-height: 236px;
-    min-height: 0;
-    margin: 40px 0 0 0;
-  }
+  
+  /* Contact End */
 
   /* Footer Start */
   .social-footer {
