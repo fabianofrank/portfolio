@@ -85,6 +85,7 @@ function modalPop(projectName) {
 }
 
 /* eslint-disable no-unused-vars */
+/*eslint no-plusplus: "error"*/
 for (let i = 0; i < arr.length; i++) {
   const projectName = arr[i];
   const btn = document.getElementById(projectName);

@@ -569,7 +569,7 @@ form {
 
 #modal-top h2 {
   flex: 1;
-  padding: 6% auto;
+  padding: 6% 0;
   margin: 0;
 }
 
