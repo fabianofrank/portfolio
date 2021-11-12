@@ -6,17 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="queries.css">
-  <script src="menu.js"></script>
   <title>Frank's Portfolio</title>
 </head>
 
 <body>
   <header id="header-bg">
     <nav class="flex-nav">
-      <a href="#home">
-        Fabiano Frank
-      </a>
-
+      <a href="#home">Fabiano Frank</a>
       <div class="nav-menu" id="menu">
         <div>
           <a href="#portfolio" onclick="mobileMenu()">Portfolio</a>
@@ -34,7 +30,7 @@
           <img class="display-query" src="images/mobile/close.png" alt="close-menu"></li>
         </a>
       </div>
-      <div id="hideDiv">
+      <div id="hideMenu">
         <a id="icon" href="javascript:void(0);" onclick="mobileMenu()">
           <img class="display-query" src="images/menu.svg" alt="open-menu" onclick="hideDiv()"></li>
         </a>
@@ -114,92 +110,15 @@
     </section>
 
     <section class="work post-bg" id="portfolio">
-        <header>
-          <h1>MY RECENT WORK</h1>
-          <div class="vector-work"></div>
-        </header>
-
-        <section class="posts post1-bg">
-          <img class="resize-img" src="images/placeholder.png" alt="work-image">
-
-          <div class="post-content">
-            <h2>Multi-Post Stories</h2>
-            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-            <ul>
-              <li><a href="#">CSS</a></li>
-              <li><img src="images/divider.png" alt="divider"></li>
-              <li><a href="#">HTML</a></li>
-              <li><img src="images/divider.png" alt="divider"></li>
-              <li><a href="#">Bootstrap</a></li>
-              <li><img src="images/divider.png" alt="divider"></li>
-              <li><a href="#">Ruby</a></li>
-            </ul>
-            <button id="work-button">See Project</button>
-          </div>
-        </section>
-
-        <section class="posts post2-bg">
-          <img class="resize-img display-query" src="images/placeholder.png" alt="work-image">
-
-          <div>
-            <h2>Multi-Post Stories</h2>
-            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-            <ul>
-              <li><a href="#">CSS</a></li>
-              <li><img src="images/divider.png" alt="divider"></li>
-              <li><a href="#">HTML</a></li>
-              <li><img src="images/divider.png" alt="divider"></li>
-              <li><a href="#">Bootstrap</a></li>
-              <li><img src="images/divider.png" alt="divider"></li>
-              <li><a href="#">Ruby</a></li>
-            </ul>
-            <button id="work-button">See Project</button>
-          </div>
-
-          <img class="resize-img display-none" src="images/placeholder.png" alt="work-image">
-        </section>
-
-        <section class="posts post3-bg">
-          <img class="resize-img" src="images/placeholder.png" alt="-workimage">
-
-          <div>
-            <h2>Multi-Post Stories</h2>
-            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-            <ul>
-              <li><a href="#">CSS</a></li>
-              <li><img src="images/divider.png" alt="divider"></li>
-              <li><a href="#">HTML</a></li>
-              <li><img src="images/divider.png" alt="divider"></li>
-              <li><a href="#">Bootstrap</a></li>
-              <li><img src="images/divider.png" alt="divider"></li>
-              <li><a href="#">Ruby</a></li>
-            </ul>
-            <button id="work-button">See Project</button>
-          </div>
-        </section>
-
-        <section class="posts post4-bg">
-          <img class="resize-img display-query" src="images/placeholder.png" alt="work-image">
-
-          <div>
-            <h2>Multi-Post Stories</h2>
-            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-            <ul>
-              <li><a href="#">CSS</a></li>
-              <li><img src="images/divider.png" alt="divider"></li>
-              <li><a href="#">HTML</a></li>
-              <li><img src="images/divider.png" alt="divider"></li>
-              <li><a href="#">Bootstrap</a></li>
-              <li><img src="images/divider.png" alt="divider"></li>
-              <li><a href="#">Ruby</a></li>
-            </ul>
-            <button id="work-button">See Project</button>
-          </div>
-
-          <img class="resize-img display-none" src="images/placeholder.png" alt="work-image">
-        </section>
+      <header>
+        <h1>MY RECENT WORK</h1>
+        <div class="vector-work"></div>
+      </header>
+      <section id="works"></section>
+      <section id="modal-popup" class="modal"> 
+      </section>
     </section>
-
+    
     <section class="contact" id="contact">
         <header>
           <h1 class="display-query">CONTACT US</h1>
@@ -240,5 +159,6 @@
       </div>
     </section>
   </footer>
+<script src="menu.js"></script>
 </body>
 </html>

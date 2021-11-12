@@ -225,19 +225,29 @@ footer {
 /* Social End */
 
 /* Work Start */
-.vector-work {
-  border: 1px solid #646369;
-  width: 80vw;
-  min-width: 327px;
-}
-
-.posts {
+#works {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.work {
+.pink {
+  display: flex;
+  flex-direction: column;
+}
+
+.yellow {
+  display: flex;
+  flex-direction: column;
+}
+
+.tropical {
+  display: flex;
+  flex-direction: column;
+}
+
+.windows {
   display: flex;
   flex-direction: column;
 }
@@ -253,6 +263,10 @@ footer {
 }
 
 .resize-img {
+  min-width: 327px;
+  min-height: 236px;
+  max-width: 90%;
+  height: auto;
   padding: 48px 0 24px 0;
 }
 
@@ -281,18 +295,20 @@ footer {
 }
 
 .work ul {
-  display: grid; /* Nested Grid */
+  display: grid;
   grid-template-columns: repeat(7, auto);
   align-items: center;
   padding: 24px;
   margin: 0 24px;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .work a {
   align-items: center;
 }
 
-#work-button {
+.work-button {
   background: #7d73fc;
   border: none;
   color: white;
@@ -303,16 +319,16 @@ footer {
   font-weight: 500;
 }
 
-#work-button:hover {
+.work-button:hover {
   background: #7d73ec;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
-#work-button:active {
+.work-button:active {
   background: #5e42d7;
 }
 
-#work-button:disabled {
+.work-button:disabled {
   background: #2a2b33;
 }
 
@@ -464,6 +480,10 @@ form {
   text-align: center;
 }
 
+.modal-social img {
+  padding: 0 14px;
+}
+
 #flex-email a {
   margin-top: 9px;
   margin-bottom: 27px;
@@ -477,6 +497,128 @@ form {
 
 /* Footer End */
 
+/* Modal Start */
+#modal-popup {
+  display: none;
+  position: fixed;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+}
+
+#modal-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(25, 23, 101, 0.95);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 1px solid #fff;
+  max-width: 1156px;
+  min-width: 327px;
+  width: 80%;
+  margin: 20% auto;
+  background-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.modal p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #dcdce8;
+  margin: 24px;
+  padding: 0;
+  min-width: 279px;
+}
+
+.modal-social {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  align-items: center;
+  padding: 24px;
+  margin: 0 24px;
+}
+
+.responsive {
+  max-width: 90%;
+  height: auto;
+}
+
+#modal-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#modal-top h2 {
+  flex: 1;
+  padding: 6% 0;
+  margin: 0;
+}
+
+#modal-close {
+  width: 3%;
+  height: 3%;
+  padding: 0 6%;
+}
+
+#btn-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #7d73fc;
+  border: none;
+  color: white;
+  padding: 12px;
+  margin: 12px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  height: 48px;
+}
+
+#modal-button img {
+  padding: 6px;
+}
+
+#modal-button:hover {
+  background: #7d73ec;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+#modal-button:active {
+  background: #5e42d7;
+}
+
+#modal-button:disabled {
+  background: #2a2b33;
+}
+
+/* Modal End */
+
 /* Queries Start */
 .display-none {
   display: none;
@@ -485,12 +627,6 @@ form {
 /* Queries End */
 
 /* Background Start */
-#header-bg {
-  background: url(images/mobile/toop-menu-bg.png), url(images/mobile/bot-menu-bg.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: left center, right bottom;
-}
-
 .headline-bg {
   background: url(images/mobile/circle-left.png);
   background-repeat: no-repeat;
@@ -502,28 +638,10 @@ form {
   background-position: right top;
 }
 
-.post1-bg {
-  background: url(images/mobile/ellipse-left.png);
-  background-repeat: no-repeat;
-  background-position: left top;
-}
-
-.post2-bg {
-  background: url(images/mobile/ellipse-right.png);
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-.post3-bg {
-  background: url(images/mobile/ellipse-bot-left.png);
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.post4-bg {
-  background: url(images/mobile/ellipse-bot-right.png);
-  background-repeat: no-repeat;
-  background-position: right;
+.post-bg {
+  background: url(images/mobile/ellipse-left.png), url(images/mobile/ellipse-right.png), url(images/mobile/ellipse-bot-left.png), url(images/mobile/ellipse-bot-right.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top 250px left, top 1250px right, bottom 950px left, bottom 250px right;
 }
 
 /* Background End */

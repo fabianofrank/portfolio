@@ -87,23 +87,41 @@
   /* Social End */
 
   /* Work Start */
-
-  .posts {
+  .pink {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
   }
 
-  .posts div {
-    margin-top: 48px;
-    max-height: 448px;
-    max-width: 405px;
+  .yellow {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+
+  .tropical {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .windows {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
   }
 
   .resize-img {
-    width: 684px;
-    height: 448px;
-    padding-bottom: 0;
+    max-width: 684px;
+    max-height: 448px;
+    height: auto;
+    padding: 48px 0 0 0;
+  }
+
+  .post-content {
+    flex: 1;
+    max-width: 684px;
+    max-height: 448px;
   }
 
   .work p {
@@ -123,11 +141,8 @@
   }
 
   .work ul {
-    display: grid; /* Nested Grid */
-    grid-template-columns: repeat(7, auto);
-    align-items: center;
-    padding: 24px;
-    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .work li {
@@ -140,6 +155,51 @@
 
   #work-button {
     margin: 0 24px;
+  }
+
+  /* Work End */
+
+  /* Modal Start */
+
+  .modal p {
+    max-width: 684px;
+    max-height: 236px;
+    min-height: 0;
+    margin: 40px 0 0 0;
+  }
+
+  #modal-top h2 {
+    flex: 1;
+    padding: 6% 0 0 12%;
+    margin: 0;
+  }
+
+  #btn-align {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 310px;
+    height: 48px;
+    margin: 34px 0 90px 0;
+  }
+
+  .responsive {
+    max-width: 90%;
+    max-height: 505px;
+    height: auto;
+    padding: 0 0 24px 0;
+  }
+
+  /* Modal End */
+
+  /* Contact Start */
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 24px;
+    padding: 0;
   }
 
   .contact li {
@@ -155,7 +215,7 @@
     margin-top: 89px;
   }
 
-  /* Work End */
+  /* Contact End */
 
   /* Footer Start */
   .social-footer {
@@ -191,31 +251,7 @@
   .post-bg {
     background: url(images/desktop/ellipse-left.png), url(images/desktop/ellipse-right.png), url(images/desktop/ellipse-bot-left.png), url(images/desktop/ellipse-bot-right.png);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: top left, center right, bottom left, bottom right;
-  }
-
-  .post1-bg {
-    background: none;
-    background-repeat: no-repeat;
-    background-position: left top;
-  }
-
-  .post2-bg {
-    background: none;
-    background-repeat: no-repeat;
-    background-position: right;
-  }
-
-  .post3-bg {
-    background: none;
-    background-repeat: no-repeat;
-    background-position: left;
-  }
-
-  .post4-bg {
-    background: none;
-    background-repeat: no-repeat;
-    background-position: right;
+    background-position: top left, center right, bottom 450px left, bottom 150px right;
   }
 
   /* Background End */
