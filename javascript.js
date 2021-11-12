@@ -163,7 +163,7 @@ const emailIn = document.getElementById('email-input');
 function updateForm() {
   let data = {
     name: nameIn.value.trim(),
-    email: mailIn.value.trim(),
+    email: emailIn.value.trim(),
     text: textIn.value.trim(),
   };
   const stringData = JSON.stringify(data);
