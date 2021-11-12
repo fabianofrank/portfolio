@@ -84,9 +84,9 @@ function modalPop(projectName) {
   document.getElementById('modal-bg').addEventListener('click', closeModal);
 }
 
-/* eslint-disable no-unused-vars */
-
 /*eslint no-plusplus: "error"*/
+
+/* eslint-disable no-unused-vars */
 
 for (let i = 0; i < arr.length; i++) {
   const projectName = arr[i];
