@@ -84,7 +84,7 @@ function modalPop(projectName) {
   document.getElementById('modal-bg').addEventListener('click', closeModal);
 }
 
-/* eslint no-plusplus: "error" */
+/* eslint no-plusplus: ["error", { "allowForLoopAfterthoughts": true }] */
 
 /* eslint-disable no-unused-vars */
 
