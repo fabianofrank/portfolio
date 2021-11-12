@@ -47,6 +47,13 @@ footer {
   margin-top: 71px;
 }
 
+small {
+  color: white;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
 /* Nav Start */
 
 .flex-nav {
