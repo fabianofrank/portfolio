@@ -54,7 +54,7 @@ Object.keys(arr).forEach((index) => {
   </section>`;
 });
 
-// Function to Close: modal-popup 
+// Function to Close: modal-popup
 function closeModal() {
   document.getElementById('modal-popup').innerHTML = '';
   document.getElementById('modal-popup').style.display = 'none';
@@ -145,7 +145,6 @@ function upperCase(input) {
 
 // Error Message
 form.addEventListener('submit', (event) => {
-  let isValid = false;
   const emailInput = email.value.trim();
   if (upperCase(emailInput)) {
     event.preventDefault();
