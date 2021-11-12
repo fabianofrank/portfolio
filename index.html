@@ -126,19 +126,20 @@
           <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         </header>
 
-        <form action="https://formspree.io/f/xpzkebvd" method="post">
-        <ul>
-          <li>
-            <input class="form-input" type="text" name="name" id="text-input" placeholder="Name" maxlength="30" required>
-          </li>
-          <li>
-            <input class="form-input" type="email" name="email" id="email-input" placeholder="example@email.com" required>
-          </li>
-          <li>
-            <textarea class="form-input" name="msg-input" id="msg" placeholder="Enter text here" maxlength="500" required></textarea>
-          </li>
-        </ul>
-        <button id="contact-button">Send</button>
+        <form id="form" action="https://formspree.io/f/xpzkebvd" method="post">
+          <ul>
+            <li>
+              <input class="form-input" type="text" name="name" id="text-input" placeholder="Name" maxlength="30" required>
+            </li>
+            <li>
+              <input class="form-input" type="email" name="email" id="email-input" placeholder="example@email.com" required>
+            </li>
+            <li>
+              <textarea class="form-input" name="msg-input" id="msg" placeholder="Enter text here" maxlength="500" required></textarea>
+            </li>
+          </ul>
+          <button id="contact-button" type="submit">Send</button>
+          <small id="small"></small>
         </form>
     </section>
   </main>
