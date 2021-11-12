@@ -161,7 +161,7 @@ const emailIn = document.getElementById('email-input');
 
 // Set and Store Data
 function updateForm() {
-  let data = {
+  const data = {
     name: nameIn.value.trim(),
     email: emailIn.value.trim(),
     text: textIn.value.trim(),
