@@ -46,20 +46,23 @@ Object.keys(arr).forEach((index) => {
       <li><a href="#">${projects[projectName].listed[3]}</a></li>
       <li><img src="${projects[projectName].listed[0]}" alt="divider"></li>
     </ul>
-    <button class="work-button" id="work-button-${projectName}" href="javascript:void(0);" onclick="myModal()">See Project</button>
+    <button class="work-button" id="${projectName}" href="javascript:void(0);" onclick="myModal()">See Project</button>
   </div>
   </section>`;
 });
 
-Object.keys(arr).forEach((index) => {
-  const projectName = arr[index];
-  document.getElementById('modal-popup').innerHTML += `
+function closeModal() {
+  document.getElementById('modal-popup').innerHTML = '';
+  document.getElementById('modal-popup').style.display = 'none';
+}
+
+function modalPop(projectName) {
+  document.getElementById('modal-popup').innerHTML = `
+  <div id="modal-bg"></div>
   <div class="modal-content">
   <div id="modal-top">
     <h2>${projects[projectName].title}</h2>
-    <a href="javascript:void(0);" onclick="myModal()">
-      <img src="images/mobile/close.png" alt="close-button">
-    </a>
+    <img id="modal-close" src="images/mobile/close.png" alt="close-button">
   </div>
   <img class="responsive" src="${projects[projectName].images}" alt="art-work">
   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.</p>
@@ -77,9 +80,19 @@ Object.keys(arr).forEach((index) => {
     <button id="modal-button">See Source <img src="images/github.png" alt="open"></button>
   </div>
   `;
-});
+  document.getElementById('modal-close').addEventListener('click', closeModal);
+  document.getElementById('modal-bg').addEventListener('click', closeModal);
+}
 
 /* eslint-disable no-unused-vars */
+for (let i = 0; i < arr.length; i++) {
+  const projectName = arr[i];
+  const btn = document.getElementById(projectName);
+  btn.addEventListener('click', () => {
+    modalPop(projectName);
+  });
+}
+
 function mobileMenu() {
   const div = document.getElementById('menu');
   const img = document.getElementById('hideMenu');

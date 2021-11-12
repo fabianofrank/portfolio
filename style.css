@@ -510,8 +510,18 @@ form {
   overflow: auto;
 }
 
-.modal {
+/* .modal {
   background-color: rgb(25, 23, 101, 0.8);
+} */
+
+#modal-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(25, 23, 101, 0.9);
+  mix-blend-mode: multiply;
 }
 
 .modal-content {
@@ -563,9 +573,9 @@ form {
   flex: 1;
 }
 
-#modal-top a {
-  width: 10%;
-  height: 10%;
+#modal-close {
+  width: 5%;
+  height: 5%;
   padding: 6px;
 }
 
