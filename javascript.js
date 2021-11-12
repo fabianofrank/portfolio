@@ -146,7 +146,6 @@ function upperCase(input) {
 // Error Message
 form.addEventListener('submit', (event) => {
   const emailInput = email.value.trim();
-  console.log(emailInput);
   if (upperCase(emailInput)) {
     event.preventDefault();
     small.innerHTML = error;
@@ -158,16 +157,16 @@ form.addEventListener('submit', (event) => {
 // Local Storage
 const nameIn = document.getElementById('text-input');
 const textIn = document.getElementById('msg');
-const emailIn = document.getElementById('email-input')
+const emailIn = document.getElementById('email-input');
 
 // Set and Store Data
 function updateForm() {
-  const stringData = JSON.stringify(data);
   let data = {
     name: nameIn.value.trim(),
     email: mailIn.value.trim(),
     text: textIn.value.trim(),
   };
+  const stringData = JSON.stringify(data);
   localStorage.setItem('storeData', stringData);
 }
 
