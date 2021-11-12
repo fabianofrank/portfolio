@@ -29,7 +29,7 @@ const projects = {
 };
 
 // Project's Template: projectName
-const arr = ['pink', 'yellow', 'tropical', 'windows'];
+const arr = ['pink', 'Yellow', 'tropical', 'windows'];
 Object.keys(arr).forEach((index) => {
   const projectName = arr[index];
   document.getElementById('works').innerHTML += `
