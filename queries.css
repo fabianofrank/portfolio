@@ -168,6 +168,12 @@
     margin: 40px 0 0 0;
   }
 
+  #modal-top h2 {
+    flex: 1;
+    padding: 6% 0 0 12%;
+    margin: 0;
+  }
+
   #btn-align {
     display: flex;
     flex-direction: row;
@@ -181,7 +187,7 @@
     max-width: 90%;
     max-height: 505px;
     height: auto;
-    padding: 48px 0 24px 0;
+    padding: 0 0 24px 0;
   }
 
   /* Modal End */
@@ -245,31 +251,7 @@
   .post-bg {
     background: url(images/desktop/ellipse-left.png), url(images/desktop/ellipse-right.png), url(images/desktop/ellipse-bot-left.png), url(images/desktop/ellipse-bot-right.png);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: top left, center right, bottom left, bottom right;
-  }
-
-  .post1-bg {
-    background: none;
-    background-repeat: no-repeat;
-    background-position: left top;
-  }
-
-  .post2-bg {
-    background: none;
-    background-repeat: no-repeat;
-    background-position: right;
-  }
-
-  .post3-bg {
-    background: none;
-    background-repeat: no-repeat;
-    background-position: left;
-  }
-
-  .post4-bg {
-    background: none;
-    background-repeat: no-repeat;
-    background-position: right;
+    background-position: top left, center right, bottom 450px left, bottom 150px right;
   }
 
   /* Background End */

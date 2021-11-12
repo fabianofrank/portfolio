@@ -62,7 +62,7 @@ function modalPop(projectName) {
   <div class="modal-content">
   <div id="modal-top">
     <h2>${projects[projectName].title}</h2>
-    <img id="modal-close" src="images/mobile/close.png" alt="close-button">
+    <img id="modal-close" src="images/close.svg" alt="close-button">
   </div>
   <img class="responsive" src="${projects[projectName].images}" alt="art-work">
   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.</p>

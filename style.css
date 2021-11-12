@@ -510,18 +510,13 @@ form {
   overflow: auto;
 }
 
-/* .modal {
-  background-color: rgb(25, 23, 101, 0.8);
-} */
-
 #modal-bg {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgb(25, 23, 101, 0.9);
-  mix-blend-mode: multiply;
+  background-color: rgb(25, 23, 101, 0.95);
 }
 
 .modal-content {
@@ -567,16 +562,21 @@ form {
   display: flex;
   flex-direction: row;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 #modal-top h2 {
   flex: 1;
+  padding: 6% auto;
+  margin: 0;
 }
 
 #modal-close {
-  width: 5%;
-  height: 5%;
-  padding: 6px;
+  width: 3%;
+  height: 3%;
+  padding: 0 6%;
 }
 
 #btn-align {
@@ -638,28 +638,10 @@ form {
   background-position: right top;
 }
 
-.post1-bg {
-  background: url(images/mobile/ellipse-left.png);
-  background-repeat: no-repeat;
-  background-position: left top;
-}
-
-.post2-bg {
-  background: url(images/mobile/ellipse-right.png);
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-.post3-bg {
-  background: url(images/mobile/ellipse-bot-left.png);
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.post4-bg {
-  background: url(images/mobile/ellipse-bot-right.png);
-  background-repeat: no-repeat;
-  background-position: right;
+.post-bg {
+  background: url(images/mobile/ellipse-left.png), url(images/mobile/ellipse-right.png), url(images/mobile/ellipse-bot-left.png), url(images/mobile/ellipse-bot-right.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top 250px left, top 1250px right, bottom 950px left, bottom 250px right;
 }
 
 /* Background End */
