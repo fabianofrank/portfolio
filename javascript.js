@@ -1,4 +1,6 @@
 // eslint-disable-next-line no-unused-vars
+
+// My Recent Works: projects
 const projects = {
   pink: {
     title: 'Pink Way',
@@ -26,6 +28,7 @@ const projects = {
   },
 };
 
+// Project's Template: projectName
 const arr = ['pink', 'yellow', 'tropical', 'windows'];
 Object.keys(arr).forEach((index) => {
   const projectName = arr[index];
@@ -51,11 +54,13 @@ Object.keys(arr).forEach((index) => {
   </section>`;
 });
 
+// Function to Close: modal-popup
 function closeModal() {
   document.getElementById('modal-popup').innerHTML = '';
   document.getElementById('modal-popup').style.display = 'none';
 }
 
+// Function: modalPop & Modal's Template: modal-popup
 function modalPop(projectName) {
   document.getElementById('modal-popup').innerHTML = `
   <div id="modal-bg"></div>
@@ -88,6 +93,7 @@ function modalPop(projectName) {
 
 /* eslint-disable no-unused-vars */
 
+// Passes projectName into modalPop
 for (let i = 0; i < arr.length; i++) {
   const projectName = arr[i];
   const btn = document.getElementById(projectName);
@@ -96,6 +102,7 @@ for (let i = 0; i < arr.length; i++) {
   });
 }
 
+// Open/Close Menu
 function mobileMenu() {
   const div = document.getElementById('menu');
   const img = document.getElementById('hideMenu');
@@ -113,6 +120,7 @@ function mobileMenu() {
   }
 }
 
+// Approach 'onclick' to Close: modal-popup
 function myModal() {
   const modal = document.getElementById('modal-popup');
   if (modal.style.display === 'block') {
@@ -123,3 +131,25 @@ function myModal() {
 }
 
 /* eslint-enable no-unused-vars */
+
+// Form Validation
+const form = document.getElementById('form');
+const email = document.getElementById('email-input');
+const error = 'Your e-mail can not contain uppercase letters';
+const small = document.querySelector('#small');
+
+// Email Case Sensitive
+function upperCase(input) {
+  return /[A-Z]/.test(input);
+}
+
+// Error Message
+form.addEventListener('submit', (event) => {
+  const emailInput = email.value.trim();
+  if (upperCase(emailInput)) {
+    event.preventDefault();
+    small.innerHTML = error;
+  } else {
+    small.innerHTML = '';
+  }
+});
