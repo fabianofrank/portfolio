@@ -146,6 +146,7 @@ function upperCase(input) {
 // Error Message
 form.addEventListener('submit', (event) => {
   const emailInput = email.value.trim();
+  console.log(emailInput);
   if (upperCase(emailInput)) {
     event.preventDefault();
     small.innerHTML = error;
@@ -153,3 +154,31 @@ form.addEventListener('submit', (event) => {
     small.innerHTML = '';
   }
 });
+
+// Local Storage
+const nameIn = document.getElementById('text-input');
+const textIn = document.getElementById('msg');
+const mainIn = document.getElementById('email-input')
+
+// Set and Store Data
+function updateForm() {
+  const stringData = JSON.stringify(data);
+  var data = {
+    name: nameIn.value.trim(),
+    email: mailIn.value.trim(),
+    text: textIn.value.trim()
+  };
+  localStorage.setItem('storeData', stringData);
+}
+
+form.addEventListener('change', updateForm);
+
+// Load and Run Data
+function loadData() {
+  const parseData = JSON.parse(localStorage.getItem('storeData'))
+  nameIn.value = passData.name;
+  emailIn.value = passData.email;
+  textIn.value = passData.text;
+}
+
+window.onload = loadData;
